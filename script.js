@@ -41,6 +41,7 @@ function checkAnswer() {
     if (userAnswer === correctAnswer) {
         resultElement.textContent = '正解！ 🎉';
         resultElement.className = 'correct';
+        confetti(); // 派手なアニメーションを追加
     } else {
         resultElement.textContent = `不正解！ 正解は ${correctAnswer} です。`;
         resultElement.className = 'incorrect';
